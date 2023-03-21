@@ -13,7 +13,12 @@ const props = defineProps({
       class="flex flex-wrap no-underline hover:no-underline"
     >
       <div class="w-full md:w-2/3 rounded-t">
-        <img :src="blogItem.image" class="h-full w-full shadow" />
+        <nuxt-img
+          quality="80"
+          :src="blogItem.image"
+          class="h-full w-full shadow"
+        ></nuxt-img>
+        <!-- <img :src="blogItem.image" class="h-full w-full shadow" /> -->
       </div>
 
       <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">

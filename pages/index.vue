@@ -38,13 +38,6 @@ const twoArticles = await queryContent("berichten")
         class="bg-gray-200 w-full text-xl md:text-2xl text-gray-800 leading-normal rounded-t"
       >
         <lead-card :blog-item="data"></lead-card>
-        <!-- <ContentRenderer :value="data">
-        </ContentRenderer> -->
-
-        <!-- <ContentList :query="query">
-          haha:<lead-card :blog-item="blogItem"></lead-card>
-        </ContentList> -->
-        <!-- <lead-card :blog-item="blogItem"></lead-card> -->
 
         <!--Posts Container-->
         <div class="flex flex-wrap justify-between pt-12 -mx-6">

@@ -15,7 +15,12 @@ const props = defineProps({
         :to="blogItem._path"
         class="flex flex-wrap no-underline hover:no-underline"
       >
-        <img :src="blogItem.image" class="h-full w-full rounded-t pb-6" />
+        <nuxt-img
+          quality="80"
+          :src="blogItem.image"
+          class="h-full w-full rounded-t pb-6"
+        ></nuxt-img>
+        <!-- <img :src="blogItem.image" class="h-full w-full rounded-t pb-6" /> -->
         <p class="w-full text-gray-600 text-xs md:text-sm px-6">
           {{ blogItem.category }}
         </p>
